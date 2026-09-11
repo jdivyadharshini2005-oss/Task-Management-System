@@ -1,34 +1,23 @@
 # Dependencies
 node_modules/
-.pnp
-.pnp.js
+**/node_modules/
 
-# Environment variables
+# Environment files
 .env
-.env.local
-.env.*.local
+**/.env
+!.env.example
 
 # Build output
-dist/
-build/
+frontend/dist/
+frontend/.vite/
 
 # PGlite embedded database data
 backend/data/
 
 # Logs
-logs/
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # OS files
 .DS_Store
 Thumbs.db
-
-# Editor
-.vscode/
-.idea/
-
-# Drizzle generated migrations (optional — keep if you want)
-# drizzle/
